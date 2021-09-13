@@ -1,0 +1,201 @@
+{
+  "id": "c086ca84-5dc9-46e1-b0f4-823cbd253765",
+  "name": "ComplaintManager1",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "ComplaintManager1-followup-2",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "issue_acc",
+          "dataType": "@issue_acc",
+          "isList": false,
+          "required": false,
+          "prompts": [
+            "enter"
+          ],
+          "value": "$issue_acc",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "crusername",
+          "dataType": "@sys.email",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$crusername",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "crpassword",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$crpassword",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "crpassword1",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$crpassword1",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "1",
+          "userDefined": true,
+          "alias": "issue_acc",
+          "meta": "@issue_acc"
+        },
+        {
+          "text": ",",
+          "userDefined": false
+        },
+        {
+          "text": "nikshithreddy15@gmail.com",
+          "userDefined": true,
+          "alias": "crusername",
+          "meta": "@sys.email"
+        },
+        {
+          "text": ",",
+          "userDefined": false
+        },
+        {
+          "text": "Chikku*15",
+          "userDefined": true,
+          "alias": "crpassword",
+          "meta": "@sys.any"
+        },
+        {
+          "text": ",",
+          "userDefined": false
+        },
+        {
+          "text": "Chikku*15",
+          "userDefined": true,
+          "alias": "crpassword1",
+          "meta": "@sys.any"
+        }
+      ],
+      "count": 0,
+      "id": "02e618e5-57a7-4ed6-a703-bca3cdbb19d5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "2",
+          "userDefined": true,
+          "alias": "issue_acc",
+          "meta": "@issue_acc"
+        }
+      ],
+      "count": 0,
+      "id": "f032d082-f92d-48c5-997f-dc7398101b7e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "1",
+          "userDefined": true,
+          "alias": "issue_acc",
+          "meta": "@issue_acc"
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "nikshithreddy15@gmail.com",
+          "userDefined": true,
+          "alias": "crusername",
+          "meta": "@sys.email"
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "Chikku*15",
+          "userDefined": true,
+          "alias": "crpassword",
+          "meta": "@sys.any"
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "Chikku*15",
+          "userDefined": true,
+          "alias": "crpassword1",
+          "meta": "@sys.any"
+        }
+      ],
+      "count": 0,
+      "id": "236ddfe2-0cdf-47b3-94c2-f52831443816",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

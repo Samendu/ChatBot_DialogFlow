@@ -1,0 +1,71 @@
+{
+  "id": "7d05df4e-f536-44eb-b5b1-618947bf0d22",
+  "name": "ComplaintManager1-custom1-custom1",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "ComplaintManager1-custom1-followup"
+  ],
+  "contexts": [
+    "ComplaintManager1-custom1-followup"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": "af5cc7e8-8f54-48fd-841e-1526444c5c0f",
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "ComplaintManager1-custom1.ComplaintManager1-custom1-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "issue_num",
+          "dataType": "@issue_num",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$issue_num",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": "af5cc7e8-8f54-48fd-841e-1526444c5c0f",
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "1",
+          "userDefined": true,
+          "alias": "issue_num",
+          "meta": "@issue_num"
+        }
+      ],
+      "count": 0,
+      "id": "8ee78ea1-442a-4510-bdb6-81d78e2f7e79",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

@@ -1,0 +1,127 @@
+{
+  "id": "af5cc7e8-8f54-48fd-841e-1526444c5c0f",
+  "name": "ComplaintManager1-custom1",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "ComplaintManager1.ComplaintManager1-custom",
+      "affectedContexts": [
+        {
+          "name": "ComplaintManager1-custom1-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "username",
+          "dataType": "@sys.email",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Enter username :"
+          ],
+          "value": "$username",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "password",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Enter password :"
+          ],
+          "value": "$password",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "nikshithreddy15@gmail.com",
+          "userDefined": true,
+          "alias": "username",
+          "meta": "@sys.email"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "Chikku*15",
+          "userDefined": true,
+          "alias": "password",
+          "meta": "@sys.any"
+        }
+      ],
+      "count": 0,
+      "id": "b038ff7a-aa0f-4411-9ddd-672d427c4ae2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Username ",
+          "userDefined": false
+        },
+        {
+          "text": "nikshithreddy15@gmail.com",
+          "userDefined": true,
+          "alias": "username",
+          "meta": "@sys.email"
+        },
+        {
+          "text": " password ",
+          "userDefined": false
+        },
+        {
+          "text": "Chikku*15",
+          "userDefined": true,
+          "alias": "password",
+          "meta": "@sys.any"
+        }
+      ],
+      "count": 0,
+      "id": "4c698448-2bf7-402e-85ee-a2c9df1454b1",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
